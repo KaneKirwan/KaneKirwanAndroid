@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(v.getId() == R.id.button){
             switchActivity1();
         }
+
         if(v.getId() == R.id.button4){
             switchActivity2();
         }
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent switchActivityIntent1 = new Intent(this, MainActivity2.class);
         startActivity(switchActivityIntent1);
     }
+
     private void switchActivity2(){
         Intent switchActivityIntent2 = new Intent(this, MainActivity3.class);
         startActivity(switchActivityIntent2);
