@@ -11,13 +11,13 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity3 extends AppCompatActivity implements View.OnClickListener {
-    Button screen1;
+    Button screen2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-        screen1 = findViewById(R.id.button2);
-        screen1.setOnClickListener(this);
+        setContentView(R.layout.activity_main3);
+        screen2 = findViewById(R.id.button3);
+        screen2.setOnClickListener(this);
     }
 
     @Override

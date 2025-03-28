@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         screen2 = findViewById(R.id.button);
         screen2.setOnClickListener(this);
-        screen3 = findViewById(R.id.button);
+        screen3 = findViewById(R.id.button4);
         screen3.setOnClickListener(this);
     }
 
@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void switchActivity(){
-        Intent switchActivityIntent = new Intent(this, MainActivity2.class);
-        Intent switchActivityIntent = new Intent(this, MainActivity3.class);
-        startActivity(switchActivityIntent);
-        startActivity(switchActivityIntent);
+        Intent switchActivityIntent1 = new Intent(this, MainActivity2.class);
+        startActivity(switchActivityIntent1);
+        Intent switchActivityIntent2 = new Intent(this, MainActivity3.class);
+        startActivity(switchActivityIntent2);
     }
 }
