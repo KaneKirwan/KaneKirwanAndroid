@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button screen2;
+    Button screen3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         screen2 = findViewById(R.id.button);
         screen2.setOnClickListener(this);
+        screen3 = findViewById(R.id.button);
+        screen3.setOnClickListener(this);
     }
 
     @Override
@@ -29,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void switchActivity(){
         Intent switchActivityIntent = new Intent(this, MainActivity2.class);
+        Intent switchActivityIntent = new Intent(this, MainActivity3.class);
+        startActivity(switchActivityIntent);
         startActivity(switchActivityIntent);
     }
 }
