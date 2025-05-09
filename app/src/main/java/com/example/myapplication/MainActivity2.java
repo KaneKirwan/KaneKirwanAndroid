@@ -44,9 +44,6 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         } else if (view.getId() == R.id.button2) {
             finish();
         }
-
-
-
     }
 
     public void start_timer(){

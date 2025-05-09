@@ -7,13 +7,11 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button screen2;
     Button screen3;
+    Button screen4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +19,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         screen2 = findViewById(R.id.button);
         screen2.setOnClickListener(this);
-        screen3 = findViewById(R.id.button4);
+        screen3 = findViewById(R.id.button5);
         screen3.setOnClickListener(this);
+        screen4 = findViewById(R.id.button6);
+        screen4.setOnClickListener(this);
     }
 
     @Override
@@ -31,8 +31,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             switchActivity1();
         }
 
-        if(v.getId() == R.id.button4){
+        if(v.getId() == R.id.button5){
             switchActivity2();
+        }
+
+        if(v.getId() == R.id.button6){
+            switchActivity3();
         }
     }
 
@@ -44,5 +48,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void switchActivity2(){
         Intent switchActivityIntent2 = new Intent(this, MainActivity3.class);
         startActivity(switchActivityIntent2);
+    }
+
+    private void switchActivity3(){
+        Intent switchActivityIntent3 = new Intent(this, MainActivity4.class);
+        startActivity(switchActivityIntent3);
     }
 }
