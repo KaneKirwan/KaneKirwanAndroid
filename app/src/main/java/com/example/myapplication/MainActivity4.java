@@ -35,13 +35,13 @@ public class MainActivity4 extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         int current_val = Integer.parseInt(count_val.getText().toString());
         int new_val = current_val;
-        if (v.getId() == R.id.add_button) {
+        if (v.getId() == R.id.add_button1) {
             new_val = current_val + 1;
         }
-        else if (v.getId() == R.id.minus_button) {
+        else if (v.getId() == R.id.minus_button1) {
             new_val = current_val - 1;
         }
-        else if (v.getId() == R.id.button3) {
+        else if (v.getId() == R.id.button4) {
             finish();
         }
         count_val.setText(String.valueOf(new_val));
